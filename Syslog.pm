@@ -1079,10 +1079,6 @@ mechanism, priorities C<DEBUG> and C<INFO> are mapped to event type
 C<informational>, C<NOTICE> and C<WARNING> to C<warning> and C<ERR> to 
 C<EMERG> to C<error>.
 
-If you didn't use C<openlog()> before using C<syslog()>, C<syslog()> will 
-try to guess the C<$ident> by extracting the shortest prefix of 
-C<$format> that ends in a C<":">.
-
 B<Examples>
 
     # informational level
